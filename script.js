@@ -5,7 +5,8 @@ const scroll = new LocomotiveScroll({
 });
 
 // Get the necessary elements
-var elemC = document.querySelector("#elem-container");
+function page4Animation() {
+    var elemC = document.querySelector("#elem-container");
 var fixed = document.querySelector("#fixed-image");
 
 // Function to show the fixed image
@@ -35,13 +36,16 @@ document.querySelectorAll(".elem").forEach(e => {
     });
 });
 
+}
 // Initialize Swiper
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: "auto",
-    centeredSlides: true,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-});
+function swiperAnimation() {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 100,
+        
+    });
+}
+
+swiperAnimation()
+page4Animation()
